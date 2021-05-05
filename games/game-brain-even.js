@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import getRandomNumber from '../src/index.js';
+import { getRandomNumber } from '../src/index.js';
 
 const term = 'Answer "yes" if the number is even, otherwise answer "no".';
 
