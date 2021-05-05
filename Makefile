@@ -4,10 +4,14 @@ install:
 lint:
 	npx eslint .
 
-node bin/brain-games.js
+brain-games:
+	node bin/brain-games.js
 
-node bin/brain-even.js
+brain-even:
+	node bin/brain-even.js
 
-node bin/brain-calc.js
+brain-calc:
+	node bin/brain-calc.js
 
-npm publish --dry-run
+publish:
+	npm publish --dry-run
