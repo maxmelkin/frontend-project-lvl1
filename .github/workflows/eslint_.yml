@@ -8,11 +8,11 @@ jobs:
 
     # The type of machine to run the job on
     runs-on: macos-latest
-    
+
     steps:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - uses: actions/checkout@v2
-
+      
       - name: npm install
         # Install project
         run:
