@@ -22,9 +22,9 @@
         "brain-even": "bin/brain-even.js",
         "brain-calc": "bin/brain-calc.js"
     },
-    "dependencies": {
+    "Dependencies": {
         "readline-sync": "^1.4.10"
-      },
+    },
     "devDependencies": {
         "eslint": "^7.25.0",
         "eslint-config-airbnb-base": "^14.2.1",
