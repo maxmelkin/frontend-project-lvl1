@@ -1,18 +1,16 @@
 #!/usr/bin/env node
-// import readlineSync from 'readline-sync';
+
 import name from './cli.js';
+
+console.log(`Hello, ${name}!`);
 
 function getRandomNumber() {
   return Math.floor(Math.random() * 100);
 }
 
-function workflow(term, result) {
-  console.log(`Hello, ${name}!\n${term}`);
-
+function workflow(result) {
   for (let i = 0; i < 3; i += 1) {
-    if (result) {
-      console.log('Correct!');
-    } else {
+    if (!result()) {
       process.exit();
     }
   }
