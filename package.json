@@ -23,7 +23,7 @@
     "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
-    "readline-sync": "github:anseki/readline-sync"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^7.25.0",
