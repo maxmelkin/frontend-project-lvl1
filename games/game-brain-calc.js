@@ -7,7 +7,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 function getRandomExpr() {
   const exprArr = ['+', '-', '*'];
-  return exprArr[Math.floor(Math.random * exprArr.length)];
+  return exprArr[Math.floor(Math.random() * exprArr.length)];
 }
 
 function getRandomRes(num1, num2, expr) {
