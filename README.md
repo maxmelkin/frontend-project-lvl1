@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 ### Brain-even demo:
-[![asciicast](https://asciinema.org/a/1xeBbzyIcBkqT8OSXIQCH8Kte)](https://asciinema.org/a/1xeBbzyIcBkqT8OSXIQCH8Kte)
+[![asciicast](https://asciinema.org/a/1xeBbzyIcBkqT8OSXIQCH8Kte.svg)](https://asciinema.org/a/1xeBbzyIcBkqT8OSXIQCH8Kte)
 
 ### Brain-calc demo:
-[![asciicast](https://asciinema.org/a/PXFO6WK46BNg7n9xAUeBdDUeM)](https://asciinema.org/a/PXFO6WK46BNg7n9xAUeBdDUeM)
+[![asciicast](https://asciinema.org/a/PXFO6WK46BNg7n9xAUeBdDUeM.svg)](https://asciinema.org/a/PXFO6WK46BNg7n9xAUeBdDUeM)
