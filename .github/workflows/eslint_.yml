@@ -1,18 +1,27 @@
 name: Eslint
 
-on: [push]
+# Run this workflow every time a new commit pushed to your repository
+on: push
 
 jobs:
   build:
 
+    # The type of machine to run the job on
     runs-on: macos-latest
-
+    
     steps:
-    - uses: actions/checkout@v2
-    - name: npm install
-      run: make install
-      env:
-        CI: true
-    - name: Run linter
-      run:
-        make lint
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - uses: actions/checkout@v2
+
+      - name: npm install
+        # Install project
+        run:
+          make install
+        # Add environment variables
+        env:
+          CI: true
+      - name: Run linter
+        # Run Linter
+        run:
+          make lint
+
