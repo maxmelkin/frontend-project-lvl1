@@ -4,7 +4,7 @@ import name from './cli.js';
 
 console.log(`Hello, ${name}!`);
 
-function getRandomNumber() {
+function getRandomNum() {
   return Math.floor(Math.random() * 100);
 }
 
@@ -17,4 +17,4 @@ function workflow(result) {
   console.log(`Congratulations, ${name}!`);
 }
 
-export { workflow, getRandomNumber };
+export { getRandomNum, workflow };
