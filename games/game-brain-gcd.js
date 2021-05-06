@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
 import { getRandomNum, getGcd } from '../src/index.js';
 
