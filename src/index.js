@@ -4,8 +4,10 @@ import name from './cli.js';
 
 console.log(`Hello, ${name}!`);
 
-function getRandomNum() {
-  return Math.floor(Math.random() * 100);
+function getRandomNum(min = 0, max = 100) {
+  const minAdj = Math.ceil(min);
+  const maxAdj = Math.floor(max);
+  return Math.floor(Math.random() * (maxAdj - minAdj) + minAdj);
 }
 
 function getRandomExpr() {
@@ -25,6 +27,7 @@ function getRandomRes(num1, num2, expr) {
     default:
       res = num1 + num2;
   }
+
   return res;
 }
 
@@ -35,14 +38,26 @@ function isEven(n) {
 function getGcd(num1, num2) {
   let res = 0;
   for (let d9r = num1; d9r > 0; d9r -= 1) {
-    if (!(num1 % d9r)) {
-      if (!(num2 % d9r)) {
-        res = d9r;
-        break;
-      }
+    if (!(num1 % d9r) && !(num2 % d9r)) {
+      res = d9r;
+      break;
     }
   }
+
   return res;
+}
+
+function getP9n() {
+  const firstNum = getRandomNum(0, 50);
+  const diff = getRandomNum(1, 10);
+  const p9nSize = getRandomNum(5, 15);
+  let p9n = [firstNum];
+
+  for (let i = 1; i < p9nSize; i += 1) {
+    p9n = p9n.push(p9n[i - 1] + diff);
+  }
+
+  return p9n;
 }
 
 function workflow(result) {
@@ -56,5 +71,5 @@ function workflow(result) {
 }
 
 export {
-  getRandomNum, getRandomExpr, getRandomRes, isEven, getGcd, workflow,
+  getRandomNum, getRandomExpr, getRandomRes, getGcd, getP9n, isEven, workflow,
 };

@@ -16,5 +16,8 @@ brain-calc:
 brain-gcd:
 	node bin/brain-gcd.js
 
+brain-p9n:
+	node bin/brain-p9n.js
+
 publish:
 	npm publish --dry-run
