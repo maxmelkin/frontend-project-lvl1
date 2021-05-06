@@ -48,6 +48,7 @@ function getGcd(num1, num2) {
 function workflow(result) {
   for (let i = 0; i < 3; i += 1) {
     if (!result()) {
+      console.log(`Let's try again, ${name}!`);
       process.exit();
     }
   }
