@@ -1,13 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { getRandomNum } from '../src/index.js';
+import { getRandomNum, isEven } from '../src/index.js';
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-function isEven(n) {
-  return !(n % 2) ? 'yes' : 'no';
-}
 
 function game() {
   const randomNum = getRandomNum();

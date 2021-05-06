@@ -1,29 +1,9 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { getRandomNum } from '../src/index.js';
+import { getRandomNum, getRandomExpr, getRandomRes } from '../src/index.js';
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-function getRandomExpr() {
-  const exprArr = ['+', '-', '*'];
-  return exprArr[Math.floor(Math.random() * exprArr.length)];
-}
-
-function getRandomRes(num1, num2, expr) {
-  let res = 0;
-  switch (expr) {
-    case '-':
-      res = num1 - num2;
-      break;
-    case '*':
-      res = num1 * num2;
-      break;
-    default:
-      res = num1 + num2;
-  }
-  return res;
-}
 
 function game() {
   const num1 = getRandomNum();
