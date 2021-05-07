@@ -57,12 +57,21 @@ function getP9n() {
     p9n = p9n.push(p9n[i - 1] + diff);
   }
 
-  return p9n;
+  function obfuscate(arr) {
+    const arrObfuscated = arr;
+    const indObfuscated = getRandomNum(0, p9nSize);
+    arrObfuscated[indObfuscated] = '..';
+    return [arrObfuscated, indObfuscated];
+  }
+
+  const p9nObfuscated = obfuscate(p9n);
+
+  return [p9n, p9nObfuscated].flat();
 }
 
-function workflow(result) {
+function workflow(correct) {
   for (let i = 0; i < 3; i += 1) {
-    if (!result()) {
+    if (!correct()) {
       console.log(`Let's try again, ${name}!`);
       process.exit();
     }
