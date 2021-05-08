@@ -22,7 +22,7 @@
         "brain-even": "bin/brain-even.js",
         "brain-calc": "bin/brain-calc.js",
         "brain-gcd": "bin/brain-gcd.js",
-        "brin-p9n": "bin/brain-p9n.js"
+        "brain-p9n": "bin/brain-p9n.js"
     },
     "devDependencies": {
         "eslint": "^7.25.0",
