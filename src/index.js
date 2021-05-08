@@ -70,10 +70,17 @@ function getP9n() {
 }
 
 function isPrime(num) {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
-    if (num % i === 0) return false;
+  let counter = 0;
+
+  for (let i = 2; i < num; i += 1) {
+    if (!(num % i) && (counter < 2)) {
+      counter += 1;
+    } else if (!(num % i) && (counter > 2)) {
+      break;
+    }
   }
-  return num > 1;
+
+  return (counter < 2) ? 'yes' : 'no';
 }
 
 function workflow(correct) {

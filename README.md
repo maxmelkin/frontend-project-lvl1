@@ -14,3 +14,6 @@
 
 ### Brain-progression (p9n) demo:
 [![asciicast](https://asciinema.org/a/4SiCmB9UjJdl0SnVX6eh15vpv.svg)](https://asciinema.org/a/4SiCmB9UjJdl0SnVX6eh15vpv)
+
+### Brain-prime demo:
+[![asciicast](https://asciinema.org/a/zObrBXvN9yWCmT3yvcgpNRGw0.svg)](https://asciinema.org/a/zObrBXvN9yWCmT3yvcgpNRGw0)
