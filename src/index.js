@@ -60,14 +60,12 @@ function getP9n() {
   function obfuscate(arr) {
     const arrObfuscated = arr;
     const indObfuscated = getRandomNum(0, p9nSize);
+    const elemObfuscated = arrObfuscated[indObfuscated];
     arrObfuscated[indObfuscated] = '..';
-    return [arrObfuscated, indObfuscated];
+    return [arrObfuscated.join(' '), elemObfuscated];
   }
 
-  const p9nObfuscated = obfuscate(p9n);
-
-  return 333;
-//   return [p9n, p9nObfuscated].flat();
+  return obfuscate(p9n);
 }
 
 function workflow(correct) {
