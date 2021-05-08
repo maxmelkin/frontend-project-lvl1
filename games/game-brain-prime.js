@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomNum, isPrime } from '../src/index.js';
 
-function game() {
+function gameBrainPrime() {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
   const num = getRandomNum();
@@ -17,4 +17,4 @@ function game() {
   return false;
 }
 
-export default game;
+export default gameBrainPrime;

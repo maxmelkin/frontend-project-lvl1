@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomNum, getRandomExpr, getResult } from '../src/index.js';
 
-function game() {
+function gameBrainCalc() {
   console.log('What is the result of the expression?');
 
   const num1 = getRandomNum();
@@ -19,4 +19,4 @@ function game() {
   return false;
 }
 
-export default game;
+export default gameBrainCalc;

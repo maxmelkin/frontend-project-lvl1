@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getRandomNum, isEven } from '../src/index.js';
 
-function game() {
+function gameBrainEven() {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   const num = getRandomNum();
@@ -17,4 +17,4 @@ function game() {
   return false;
 }
 
-export default game;
+export default gameBrainEven;

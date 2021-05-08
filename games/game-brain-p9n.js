@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import { getP9n } from '../src/index.js';
 
-function game() {
+function gameBrainP9n() {
   console.log('What number is missing in the progression?');
 
   const p9n = getP9n();
@@ -17,4 +17,4 @@ function game() {
   return false;
 }
 
-export default game;
+export default gameBrainP9n;
