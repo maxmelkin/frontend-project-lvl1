@@ -61,6 +61,7 @@ function getP9n() {
     const arrObfuscated = arr;
     const indObfuscated = getRandomNum(0, p9nSize);
     const elemObfuscated = arrObfuscated[indObfuscated];
+
     arrObfuscated[indObfuscated] = '..';
     return [arrObfuscated.join(' '), elemObfuscated];
   }
