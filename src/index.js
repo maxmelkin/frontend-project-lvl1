@@ -51,10 +51,10 @@ function getP9n() {
   const firstNum = getRandomNum(0, 50);
   const diff = getRandomNum(1, 10);
   const p9nSize = getRandomNum(5, 15);
-  let p9n = [firstNum];
+  const p9n = [firstNum];
 
   for (let i = 1; i < p9nSize; i += 1) {
-    p9n = p9n.push(p9n[i - 1] + diff);
+    p9n.push(p9n[i - 1] + diff);
   }
 
   function obfuscate(arr) {
