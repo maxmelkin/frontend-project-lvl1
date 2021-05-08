@@ -66,7 +66,8 @@ function getP9n() {
 
   const p9nObfuscated = obfuscate(p9n);
 
-  return [p9n, p9nObfuscated].flat();
+  return 333;
+//   return [p9n, p9nObfuscated].flat();
 }
 
 function workflow(correct) {
