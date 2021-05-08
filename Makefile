@@ -19,5 +19,8 @@ brain-gcd:
 brain-p9n:
 	node bin/brain-p9n.js
 
+brain-prime:
+	node bin/brain-prime.js
+
 publish:
 	npm publish --dry-run

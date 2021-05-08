@@ -15,7 +15,7 @@ function getRandomExpr() {
   return exprArr[Math.floor(Math.random() * exprArr.length)];
 }
 
-function getRandomRes(num1, num2, expr) {
+function getResult(num1, num2, expr) {
   let res = 0;
   switch (expr) {
     case '-':
@@ -28,7 +28,7 @@ function getRandomRes(num1, num2, expr) {
       res = num1 + num2;
   }
 
-  return res;
+  return String(res);
 }
 
 function isEven(n) {
@@ -44,7 +44,7 @@ function getGcd(num1, num2) {
     }
   }
 
-  return res;
+  return String(res);
 }
 
 function getP9n() {
@@ -63,10 +63,17 @@ function getP9n() {
     const elemObfuscated = arrObfuscated[indObfuscated];
 
     arrObfuscated[indObfuscated] = '..';
-    return [arrObfuscated.join(' '), elemObfuscated];
+    return [arrObfuscated.join(' '), String(elemObfuscated)];
   }
 
   return obfuscate(p9n);
+}
+
+function isPrime(num) {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return num > 1;
 }
 
 function workflow(correct) {
@@ -80,5 +87,5 @@ function workflow(correct) {
 }
 
 export {
-  getRandomNum, getRandomExpr, getRandomRes, getGcd, getP9n, isEven, workflow,
+  getRandomNum, getRandomExpr, getResult, getGcd, getP9n, isEven, isPrime, workflow,
 };

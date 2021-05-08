@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
-import { getP9n } from '../src/index.js';
+import { getRandomNum, isPrime } from '../src/index.js';
 
 function game() {
-  console.log('What number is missing in the progression?');
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-  const p9n = getP9n();
+  const num = getRandomNum();
 
-  const correctAnswer = p9n[1];
-  const userAnswer = readlineSync.question(`Question: ${p9n[0]}\nYour answer: `);
+  const correctAnswer = isPrime(num);
+  const userAnswer = readlineSync.question(`Question: ${num}\nYour answer: `);
 
   if (userAnswer === correctAnswer) {
     console.log('Correct!');

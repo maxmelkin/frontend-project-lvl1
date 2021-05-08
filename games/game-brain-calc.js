@@ -1,16 +1,14 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
-import { getRandomNum, getRandomExpr, getRandomRes } from '../src/index.js';
-
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+import { getRandomNum, getRandomExpr, getResult } from '../src/index.js';
 
 function game() {
+  console.log('What is the result of the expression?');
+
   const num1 = getRandomNum();
   const num2 = getRandomNum();
   const expr = getRandomExpr();
 
-  const correctAnswer = String(getRandomRes(num1, num2, expr));
+  const correctAnswer = getResult(num1, num2, expr);
   const userAnswer = readlineSync.question(`Question: ${num1} ${expr} ${num2}\nYour answer: `);
 
   if (userAnswer === correctAnswer) {

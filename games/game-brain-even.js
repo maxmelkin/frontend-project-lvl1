@@ -1,20 +1,19 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
 import { getRandomNum, isEven } from '../src/index.js';
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
 function game() {
-  const randomNum = getRandomNum();
-  const isEvenNum = isEven(randomNum);
-  const userAnswer = readlineSync.question(`Question: ${randomNum}\nYour answer: `);
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
-  if (userAnswer === isEvenNum) {
+  const num = getRandomNum();
+
+  const correctAnswer = isEven(num);
+  const userAnswer = readlineSync.question(`Question: ${num}\nYour answer: `);
+
+  if (userAnswer === correctAnswer) {
     console.log('Correct!');
     return true;
   }
-  console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${isEvenNum}".`);
+  console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
   return false;
 }
 
