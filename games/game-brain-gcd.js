@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 import { getRandomNum, getGcd } from '../src/index.js';
 
-function gameBrainGcd() {
-  console.log('Find the greatest common divisor of given numbers.');
+console.log('Find the greatest common divisor of given numbers.');
 
+function gameBrainGcd() {
   const num1 = getRandomNum();
   const num2 = getRandomNum();
 

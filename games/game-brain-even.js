@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
 import { getRandomNum, isEven } from '../src/index.js';
 
-function gameBrainEven() {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
+function gameBrainEven() {
   const num = getRandomNum();
 
   const correctAnswer = isEven(num);

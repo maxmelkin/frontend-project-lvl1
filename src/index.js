@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import name from './cli.js';
 
 console.log(`Hello, ${name}!`);
