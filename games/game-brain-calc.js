@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-// eslint-disable-next-line import/named
 import { getRandomNum, getRandomExpr, getResult } from '../src/index.js';
 
 console.log('What is the result of the expression?');
