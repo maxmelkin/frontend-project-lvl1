@@ -68,17 +68,18 @@ function getP9n() {
 }
 
 function isPrime(num) {
-  let counter = 0;
-
+  if (num === 1) {
+    return 'no';
+  }
+  if (num === 2) {
+    return 'yes';
+  }
   for (let i = 2; i < num; i += 1) {
-    if (!(num % i) && (counter < 2)) {
-      counter += 1;
-    } else if (!(num % i) && (counter > 2)) {
-      break;
+    if (num % i === 0) {
+      return 'no';
     }
   }
-
-  return (counter < 2) ? 'yes' : 'no';
+  return 'yes';
 }
 
 function workflow(correct) {
